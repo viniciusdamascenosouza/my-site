@@ -1,0 +1,6 @@
+.App {
+    background: url(/public/assets/pattern.png);
+    margin: 0 2.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
