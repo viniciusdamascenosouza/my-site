@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Banner = styled.div`
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,11 +8,10 @@ export const Banner = styled.div`
 `;
 
 export const TextBanner = styled.p`
-  max-width: 100%;
   font-size: 3rem;
   color: aliceblue;
 `;
 
 export const ImageBanner = styled.img`
-  max-width: 100%;
+  width: 587px;
 `;

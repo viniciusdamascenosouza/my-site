@@ -3,7 +3,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    background-image: linear-gradient(to bottom, rgb(146, 56, 219), rgb(25, 0, 37))
+
+  background-image: url(/public/assets/pattern.png);
+  /* background-color: linear-gradient(to bottom, rgb(146, 56, 219), rgb(25, 0, 37)); */
+  background-color: rgb(62, 6, 107);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 code {

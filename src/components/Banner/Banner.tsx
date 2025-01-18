@@ -23,10 +23,8 @@ const Banner = () => {
     },
   };
 
-  console.log(`banners.${currentBanner}.text`);
-
   return (
-    <div>
+    <>
       <S.Banner>
         <S.TextBanner>
           {banners[currentBanner as keyof typeof banners].text}
@@ -47,7 +45,7 @@ const Banner = () => {
         <button onClick={() => setCurrentBanner("aboutMe")}>Sobre mim</button>
         <button onClick={() => setCurrentBanner("future")}>Futuro</button>
       </div>
-    </div>
+    </>
   );
 };
 

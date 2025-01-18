@@ -8,6 +8,8 @@ export const CentralHeader = styled.div`
   justify-content: center;
   column-gap: 10px;
 
+  cursor: pointer;
+
   opacity: 0.4;
 
   top: 0;
@@ -26,4 +28,6 @@ export const NameHeader = styled.p`
 
 export const ImageDevHeader = styled.img`
   width: 70px;
+  max-width: 100%;
+
 `;
