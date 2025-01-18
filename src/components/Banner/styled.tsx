@@ -14,11 +14,4 @@ export const TextBanner = styled.p`
 
 export const ImageBanner = styled.img`
   width: 587px;
-
-  opacity: 0.8;
-
-  &:hover {
-    opacity: 1;
-    transition: 500ms;
-  }
 `;
