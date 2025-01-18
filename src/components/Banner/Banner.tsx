@@ -9,36 +9,43 @@ const Banner = () => {
     presentation: {
       text: "Venha conhecer minha jornada:",
       strong: "Eu sou Vinícius Damasceno e este é o meu mundo!",
+      img: "../../assets/contextPresentation.png",
     },
     aboutMe: {
       text: "Explorando a interseção da criatividade e da tecnologia",
       strong: "para criar experiências digitais cativantes.",
+      img: "../../assets/contextAboutMe.png",
     },
     future: {
       text: "Inovando constantemente e construindo um futuro digital incrível,",
       strong: "uma linha de código de cada vez.",
+      img: "../../assets/contextFuture.png",
     },
   };
+
+  console.log(`banners.${currentBanner}.text`);
 
   return (
     <div>
       <S.Banner>
         <S.TextBanner>
-            {`banners.${currentBanner}.text`}
+          {banners[currentBanner as keyof typeof banners].text}
           <br />
-          <strong>`{`banners.${currentBanner}.strong`}`</strong>
+          <strong>
+            {banners[currentBanner as keyof typeof banners].strong}
+          </strong>
         </S.TextBanner>
         <S.ImageBanner
-          src="../../assets/contextoApresentacao.png"
-          alt="homem usando computador"
+          src={`${banners[currentBanner as keyof typeof banners].img}`}
+          alt="imagem pessoa tecnológica"
         />
       </S.Banner>
       <div style={{ display: "flex", columnGap: "1rem" }}>
         <button onClick={() => setCurrentBanner("presentation")}>
-          apresentação
+          Apresentação
         </button>
-        <button onClick={() => setCurrentBanner("aboutMe")}>sobre mim</button>
-        <button onClick={() => setCurrentBanner("future")}>futuro</button>
+        <button onClick={() => setCurrentBanner("aboutMe")}>Sobre mim</button>
+        <button onClick={() => setCurrentBanner("future")}>Futuro</button>
       </div>
     </div>
   );
