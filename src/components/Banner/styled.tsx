@@ -7,7 +7,12 @@ export const Banner = styled.div`
   column-gap: 2rem;
 `;
 
-export const TextBanner = styled.p`
+export const TextsBanner = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const TextBanner = styled.span`
   font-size: 3rem;
   color: aliceblue;
 `;
