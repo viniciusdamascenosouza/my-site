@@ -4,10 +4,6 @@ import * as S from "./styled";
 
 const Header = () => {
   const { banner, setBanner } = useStore();
-  
-useEffect(() => {
-  console.log(banner)
-}, [banner])
 
   return (
     <div style={{ top: "0", position: "sticky" }}>
