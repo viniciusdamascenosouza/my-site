@@ -31,7 +31,7 @@ const Banner = () => {
               <S.TextBanner>{banners.presentation.text}</S.TextBanner>
               <br />
               <S.TextBanner>
-                <strong>{banners.presentation.strong}</strong>
+                <S.StrongText>{banners.presentation.strong}</S.StrongText>
               </S.TextBanner>
             </S.TextsBanner>
             <S.ImageBanner
@@ -42,12 +42,12 @@ const Banner = () => {
         );
       case "aboutMe":
         return (
-          <S.Banner>
+          <S.Banner >
             <S.TextsBanner>
               <S.TextBanner>{banners.aboutMe.text}</S.TextBanner>
               <br />
               <S.TextBanner>
-                <strong>{banners.aboutMe.strong}</strong>
+                <S.StrongText >{banners.aboutMe.strong}</S.StrongText>
               </S.TextBanner>
             </S.TextsBanner>
             <S.ImageBanner
@@ -63,7 +63,7 @@ const Banner = () => {
               <S.TextBanner>{banners.future.text}</S.TextBanner>
               <br />
               <S.TextBanner>
-                <strong>{banners.future.strong}</strong>
+                <S.StrongText>{banners.future.strong}</S.StrongText>
               </S.TextBanner>{" "}
             </S.TextsBanner>
             <S.ImageBanner

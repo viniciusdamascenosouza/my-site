@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import useStore from "../../store/currentBanner";
 import * as S from "./styled";
 
