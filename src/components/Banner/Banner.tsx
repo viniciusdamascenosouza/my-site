@@ -16,8 +16,8 @@ const Banner = () => {
       img: "../../assets/contextAboutMe.png",
     },
     future: {
-      text: "Explorando a interseção da criatividade e da tecnologia",
-      strong: "para criar experiências digitais cativantes.",
+      text: "Inovando constantemente e construindo um futuro digital incrível,",
+      strong: "uma linha de código de cada vez.",
       img: "../../assets/contextFuture.png",
     },
   };
@@ -42,12 +42,12 @@ const Banner = () => {
         );
       case "aboutMe":
         return (
-          <S.Banner >
+          <S.Banner>
             <S.TextsBanner>
               <S.TextBanner>{banners.aboutMe.text}</S.TextBanner>
               <br />
               <S.TextBanner>
-                <S.StrongText >{banners.aboutMe.strong}</S.StrongText>
+                <S.StrongText>{banners.aboutMe.strong}</S.StrongText>
               </S.TextBanner>
             </S.TextsBanner>
             <S.ImageBanner
@@ -64,7 +64,7 @@ const Banner = () => {
               <br />
               <S.TextBanner>
                 <S.StrongText>{banners.future.strong}</S.StrongText>
-              </S.TextBanner>{" "}
+              </S.TextBanner>
             </S.TextsBanner>
             <S.ImageBanner
               src={banners.future.img}
