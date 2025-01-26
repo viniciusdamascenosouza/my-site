@@ -2,25 +2,7 @@ import useStore from "../../store/currentBanner";
 import * as S from "./styled";
 
 const Banner = () => {
-  const { banner, setBanner } = useStore();
-
-  const banners = {
-    presentation: {
-      text: "Venha conhecer minha jornada:",
-      strong: "Eu sou Vinícius Damasceno e este é o meu mundo!",
-      img: "../../assets/contextPresentation.png",
-    },
-    aboutMe: {
-      text: "Explorando a interseção da criatividade e da tecnologia",
-      strong: "para criar experiências digitais cativantes.",
-      img: "../../assets/contextAboutMe.png",
-    },
-    future: {
-      text: "Inovando constantemente e construindo um futuro digital incrível,",
-      strong: "uma linha de código de cada vez.",
-      img: "../../assets/contextFuture.png",
-    },
-  };
+  const { banners, banner, setBanner } = useStore();
 
   const handleBannerChange = () => {
     switch (banner) {

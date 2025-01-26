@@ -1,13 +1,13 @@
-import "./App.css";
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
+import * as S from "./styles";
 
 function App() {
   return (
-    <div className="App">
+    <S.App>
       <Header />
       <Banner />
-    </div>
+    </S.App>
   );
 }
 

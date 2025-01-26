@@ -1,14 +1,10 @@
+
+
 body {
   margin: 0;
   font-family: 'Unbounded', sans-serif;
 
-  background-image: url(/public/assets/pattern.png);
-  /* background-color: linear-gradient(to bottom, rgb(146, 56, 219), rgb(25, 0, 37)); */
-  background-color: rgb(62, 6, 107);
+  background-image: url('/public/assets/pattern.png');
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-code {
-  font-family: 'Unbounded', sans-serif;
 }
