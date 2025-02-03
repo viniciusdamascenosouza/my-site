@@ -47,7 +47,7 @@ const useStore = create<Banner>((set) => ({
       img: "../../assets/contextAboutMe.png",
       bgColor: "#2a9620",
       largeText:
-        "Como programador tenho características importantes para o mercado de TI: Tenho facilidade para aprender, e me adaptar a novas tecnologias, sei trabalhar muito bem em equipe, sou organizado, dedicado, criativo e apaixonado por tecnologia! Essas soft skills me fazem aprender a oferecer cada vez mais uma melhor experiência para o usuário.",
+        "Como programador, possuo habilidades essenciais para o mercado de TI. Tenho facilidade para aprender e me adaptar a novas tecnologias, além de ser organizado, dedicado e criativo. Trabalho muito bem em equipe e sou apaixonado por tecnologia. Essas soft skills me ajudam a evoluir constantemente e a criar experiências cada vez melhores para os usuários.",
     },
     future: {
       text: "Inovando constantemente e construindo um futuro digital incrível,",
