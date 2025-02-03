@@ -39,7 +39,7 @@ const useStore = create<Banner>((set) => ({
       img: "../../assets/contextPresentation.png",
       bgColor: "#9a29db",
       largeText:
-        "Desenvolvedor Front-end, buscando sempre criar as melhores experiências para os usuários. Com mais de dois anos de estudo focados no desenvolvimento, minha paixão pela área e adaptação a novas tecnologias e tendências no universo da programação, me fazem evoluir cada dia mais.",
+        "Desenvolvedor Front-end com um ano de experiência profissional e mais de três anos de estudo na área. Busco sempre criar as melhores experiências para os usuários, unindo design e performance. Minha paixão pela programação e capacidade de adaptação a novas tecnologias me impulsionam a evoluir constantemente.",
     },
     aboutMe: {
       text: "Explorando a interseção da criatividade e da tecnologia",
