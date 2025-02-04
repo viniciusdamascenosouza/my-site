@@ -1,4 +1,4 @@
-export const Experience = () => {
+const Experience = () => {
   return (
     <div>
       <h1>Experience</h1>
