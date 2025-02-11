@@ -4,6 +4,20 @@ export const Header = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  
+  border-bottom: 1px solid #d391d845;
+  
+  opacity: 0.8;
+  filter: blur(1px);
+  
+  &:hover {
+    opacity: 1;
+    transition: 800ms;
+    filter: none;
+  }
 `;
 
 export const LogoNameHeader = styled.div`
@@ -16,15 +30,8 @@ export const LogoNameHeader = styled.div`
 
   cursor: pointer;
 
-  top: 0;
-  position: sticky;
 
-  opacity: 0.4;
 
-  &:hover {
-    opacity: 1;
-    transition: 1.4s;
-  }
 `;
 
 export const NameHeader = styled.p`
