@@ -8,7 +8,7 @@ export const StackList = styled.ul`
   flex-wrap: wrap;
   gap: 2rem;
 
-  background-color: #2b2331b0;
+  background-color: #2b23317b;
   border-radius: 12px;
 
   li {
