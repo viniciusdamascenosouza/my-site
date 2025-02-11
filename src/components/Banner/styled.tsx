@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Banner = styled.div`
   display: flex;
   flex-direction: column;
-`
+`;
 
 export const FirstSection = styled.div`
   display: flex;
@@ -11,8 +11,6 @@ export const FirstSection = styled.div`
   align-items: center;
   column-gap: 2rem;
 `;
-
-
 
 export const TextsBanner = styled.div`
   display: flex;
@@ -28,8 +26,14 @@ export const TextBanner = styled.span`
 export const StrongText = styled.strong`
   font-weight: 700;
   color: #c2d5e6;
-`
+`;
 
 export const ImageBanner = styled.img`
   width: 587px;
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+    transition: 1.4s;
+  }
 `;

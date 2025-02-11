@@ -6,4 +6,9 @@ export const CurriculumImg = styled.img`
   padding: 2rem;
   background-color: #2b23317b;
   border-radius: 12px;
+  opacity: 1;
+
+  :hover {
+    opacity: 0.5;
+  }
 `;
