@@ -2,7 +2,7 @@ import useStore from "../../store/currentBanner";
 import * as S from "./styled";
 
 const Header = () => {
-  const { banner, setBanner } = useStore();
+  const { setBanner } = useStore();
 
   return (
     <div style={{ top: "0", position: "sticky" }}>

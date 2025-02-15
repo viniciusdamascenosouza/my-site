@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
 export const Header = styled.div`
+  height: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 999;
-  
+
   border-bottom: 1px solid #d391d845;
-  
-  opacity: 0.8;
+
   filter: blur(1px);
-  
+
   &:hover {
     opacity: 1;
-    transition: 800ms;
+    transition: 80ms;
     filter: none;
   }
 `;
@@ -29,9 +29,6 @@ export const LogoNameHeader = styled.div`
   column-gap: 10px;
 
   cursor: pointer;
-
-
-
 `;
 
 export const NameHeader = styled.p`
@@ -65,6 +62,13 @@ export const ButtonHeader = styled.button`
 
   &:hover {
     border: 1px solid #d391d8;
-    background: linear-gradient(to right, #825585, #764579, #75357a, #7d3283, #712177);
+    background: linear-gradient(
+      to right,
+      #825585,
+      #764579,
+      #75357a,
+      #7d3283,
+      #712177
+    );
   }
 `;

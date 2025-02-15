@@ -30,10 +30,4 @@ export const StrongText = styled.strong`
 
 export const ImageBanner = styled.img`
   width: 587px;
-  opacity: 0.9;
-
-  &:hover {
-    opacity: 1;
-    transition: 1.4s;
-  }
 `;
