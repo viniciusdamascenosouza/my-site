@@ -6,7 +6,7 @@ const BackgroundSetter = () => {
 
   useEffect(() => {
     document.body.style.backgroundColor =
-      banners[banner as keyof typeof banners].bgColor;
+      banners[banner as keyof typeof banners]?.bgColor;
   }, [banner]);
 
   return null;

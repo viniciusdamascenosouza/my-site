@@ -1,7 +1,19 @@
-import { ToggleButton, ToggleButtonGroup } from "@mui/material";
+import { ToggleButtonGroup } from "@mui/material";
 import styled from "styled-components";
 
-export const Header = styled.div`
+interface HeaderContainerProps {
+  isBlurred: boolean;
+}
+
+interface ButtonHeaderProps {
+  isActive: boolean;
+}
+
+export const HeaderContainer = styled.header<HeaderContainerProps>`
+  /* position: fixed; */
+  width: 100%;
+  transition: filter 0.3s;
+  filter: ${props => props.isBlurred ? 'blur(1.5px)' : 'none'};
   height: 80px;
   display: flex;
   justify-content: space-around;
@@ -9,17 +21,20 @@ export const Header = styled.div`
   position: sticky;
   top: 0;
   z-index: 999;
-
+  
   border-bottom: 1px solid #d391d845;
-
-  filter: blur(1px);
-
-  &:hover {
-    opacity: 1;
-    transition: 80ms;
-    filter: none;
-  }
 `;
+
+// export const Header = styled.div`
+
+//   filter: ${({ isScrolled }) => (isScrolled ? "blur(1px)" : "none")};
+
+//   /* &:hover {
+//     opacity: 1;
+//     transition: 80ms;
+//     filter: none;
+//   } */
+// `;
 
 export const LogoNameHeader = styled.div`
   color: white;
