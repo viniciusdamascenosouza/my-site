@@ -10,31 +10,24 @@ interface ButtonHeaderProps {
 }
 
 export const HeaderContainer = styled.header<HeaderContainerProps>`
-  /* position: fixed; */
   width: 100%;
-  transition: filter 0.3s;
-  filter: ${props => props.isBlurred ? 'blur(1.5px)' : 'none'};
   height: 80px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
   position: sticky;
   top: 0;
   z-index: 999;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  transition: filter 0.3s;
+  filter: ${props => props.isBlurred ? 'blur(1.5px)' : 'none'};
   
   border-bottom: 1px solid #d391d845;
 `;
 
-// export const Header = styled.div`
 
-//   filter: ${({ isScrolled }) => (isScrolled ? "blur(1px)" : "none")};
-
-//   /* &:hover {
-//     opacity: 1;
-//     transition: 80ms;
-//     filter: none;
-//   } */
-// `;
 
 export const LogoNameHeader = styled.div`
   color: white;
