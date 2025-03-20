@@ -6,7 +6,7 @@ const Contact = () => {
       <h1 style={{ color: "#f0f8ff", marginTop: "5rem" }}>Contato</h1>
       <S.ListStyled>
         <li>
-          <a href="https://www.linkedin.com/in/viniciusd4masceno/">
+          <a href="https://www.linkedin.com/in/viniciusd4masceno/" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 128 128" width="78px" height="78px">
               <path
                 fill="#1d1d1b"
@@ -29,7 +29,7 @@ const Contact = () => {
         </li>
 
         <li>
-          <a href="https://github.com/viniciusdamascenosouza">
+          <a href="https://github.com/viniciusdamascenosouza" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 128 128" width="78px" height="78px">
               <g fill="#181616">
                 <path
