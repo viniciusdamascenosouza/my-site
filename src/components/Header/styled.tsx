@@ -12,13 +12,13 @@ export const Header = styled.div`
 
   border-bottom: 1px solid #d391d845;
 
-  /* filter: blur(1px);
+  filter: blur(1px);
 
   &:hover {
     opacity: 1;
     transition: 80ms;
     filter: none;
-  } */
+  }
 `;
 
 export const LogoNameHeader = styled.div`
@@ -45,5 +45,6 @@ export const ImageDevHeader = styled.img`
 
 export const ButtonsHeader = styled(ToggleButtonGroup)`
   display: flex;
+  align-items: center;
 `;
 

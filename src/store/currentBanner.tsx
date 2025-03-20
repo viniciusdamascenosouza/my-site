@@ -55,7 +55,7 @@ const useStore = create<Banner>((set) => ({
       img: "../../assets/contextFuture.png",
       bgColor: "#206fe6",
       largeText:
-        "Sigo focado no meu crescimento como desenvolvedor, aprimorando minhas habilidades e aprofundando meu conhecimento no universo do JavaScript. Meu objetivo é me tornar um especialista na área, dominar seu ecossistema e ir além, sempre buscando criar soluções inovadoras e impactantes. Além disso, trabalho constantemente para me tornar um profissional mais completo, desenvolvendo não apenas a parte técnica, mas também a comunicação, colaboração e a capacidade de entender melhor as necessidades dos usuários e do negócio",
+        "Sigo focado no meu crescimento como desenvolvedor, aprimorando minhas habilidades e aprofundando meu conhecimento no universo do JavaScript. Meu objetivo é me tornar um especialista na área, dominar seu ecossistema e ir além, sempre buscando criar soluções inovadoras e impactantes. Além disso, trabalho constantemente para me tornar um profissional mais completo, desenvolvendo não apenas a parte técnica, mas também a comunicação, colaboração e a capacidade de entender melhor as necessidades dos usuários e do negócio.",
     },
   },
 }));

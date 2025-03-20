@@ -3,7 +3,7 @@ import LargerTexts from "../LargerTexts/LargerTexts";
 import * as S from "./styled";
 
 const Banner = () => {
-  const { banners, banner, setBanner } = useStore();
+  const { banners, banner, } = useStore();
 
   const handleBannerChange = () => {
     switch (banner) {

@@ -1,15 +1,27 @@
-import { Button, ToggleButton } from "@mui/material";
+import { ToggleButton } from "@mui/material";
+import HelpCenterIcon from "@mui/icons-material/HelpCenter";
+
 import useStore from "../../store/currentBanner";
 import * as S from "./styled";
+import { useState } from "react";
 
 const Header = () => {
   const { banner, setBanner } = useStore();
+  const [isTooltipOpen, setIsTooltipOpen] = useState(false);
 
   const handleChange = (
     _: React.MouseEvent<HTMLElement>,
     newBanner: string
   ) => {
     setBanner(newBanner);
+  };
+
+  const handleTooltipOpen = () => {
+    setIsTooltipOpen(true);
+  };
+
+  const handleTooltipClose = () => {
+    setIsTooltipOpen(false);
   };
 
   return (
@@ -26,8 +38,6 @@ const Header = () => {
           onChange={handleChange}
           aria-label="Platform"
         >
-          // "standard" | "primary" | "secondary" | "error" | "info" | "success"
-          | "warning",
           <ToggleButton
             sx={{
               color: "white",
@@ -43,6 +53,7 @@ const Header = () => {
             color="standard"
             value="presentation"
             onClick={() => setBanner("presentation")}
+            disabled={banner === "presentation"}
           >
             Apresentação
           </ToggleButton>
@@ -61,6 +72,7 @@ const Header = () => {
             color="standard"
             value="aboutMe"
             onClick={() => setBanner("aboutMe")}
+            disabled={banner === "aboutMe"}
           >
             Sobre mim
           </ToggleButton>
@@ -79,10 +91,36 @@ const Header = () => {
             color="standard"
             value="future"
             onClick={() => setBanner("future")}
+            disabled={banner === "future"}
           >
             Futuro
           </ToggleButton>
 
+          <HelpCenterIcon
+            sx={{
+              color: "white",
+              fontSize: "1.2rem",
+              marginLeft: "8px",
+              cursor: "help",
+            }}
+            onMouseEnter={handleTooltipOpen}
+            onMouseLeave={handleTooltipClose}
+          />
+          {isTooltipOpen && (
+            <div style={{ position: "absolute", top: "100%", left: "50%" }}>
+              <div
+                style={{
+                  backgroundColor: "white",
+                  padding: "8px",
+                  color: "black",
+                  fontSize: ".8rem",
+                }}
+              >
+                Os botões acima levam você a diferentes partes da minha
+                história.
+              </div>
+            </div>
+          )}
         </S.ButtonsHeader>
       </S.Header>
     </div>
