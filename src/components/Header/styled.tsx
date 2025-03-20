@@ -1,3 +1,4 @@
+import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import styled from "styled-components";
 
 export const Header = styled.div`
@@ -11,13 +12,13 @@ export const Header = styled.div`
 
   border-bottom: 1px solid #d391d845;
 
-  filter: blur(1px);
+  /* filter: blur(1px);
 
   &:hover {
     opacity: 1;
     transition: 80ms;
     filter: none;
-  }
+  } */
 `;
 
 export const LogoNameHeader = styled.div`
@@ -42,33 +43,7 @@ export const ImageDevHeader = styled.img`
   max-width: 100%;
 `;
 
-export const ButtonsHeader = styled.div`
+export const ButtonsHeader = styled(ToggleButtonGroup)`
   display: flex;
-  column-gap: 1rem;
 `;
 
-export const ButtonHeader = styled.button`
-  padding: 10px 15px;
-
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 8px;
-
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
-
-  cursor: pointer;
-
-  &:hover {
-    border: 1px solid #d391d8;
-    background: linear-gradient(
-      to right,
-      #825585,
-      #764579,
-      #75357a,
-      #7d3283,
-      #712177
-    );
-  }
-`;
