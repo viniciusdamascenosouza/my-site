@@ -6,6 +6,7 @@ import Curriculum from "./components/Curriculum/Curriculum";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ScrollButton from "./components/ScrollButton/ScrollButton";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Projects />
         <Contact />
         <Curriculum />
+        <ScrollButton />
       </S.Main>
     </S.App>
   );

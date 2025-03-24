@@ -136,6 +136,7 @@ const Header = () => {
                 padding: "8px",
                 color: "black",
                 fontSize: ".8rem",
+                fontFamily: "Unbounded, sans-serif",
               }}
             >
               Os botões acima levam você a diferentes partes da minha história.

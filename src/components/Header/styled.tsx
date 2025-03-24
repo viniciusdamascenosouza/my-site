@@ -5,10 +5,6 @@ interface HeaderContainerProps {
   isBlurred: boolean;
 }
 
-interface ButtonHeaderProps {
-  isActive: boolean;
-}
-
 export const HeaderContainer = styled.header<HeaderContainerProps>`
   width: 100%;
   height: 80px;
@@ -20,14 +16,12 @@ export const HeaderContainer = styled.header<HeaderContainerProps>`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+
   transition: filter 0.3s;
-  filter: ${props => props.isBlurred ? 'blur(1.5px)' : 'none'};
-  
+  filter: ${(props) => (props.isBlurred ? "blur(1.5px)" : "none")};
+
   border-bottom: 1px solid #d391d845;
 `;
-
-
 
 export const LogoNameHeader = styled.div`
   color: white;
@@ -41,9 +35,11 @@ export const LogoNameHeader = styled.div`
 `;
 
 export const NameHeader = styled.p`
+  font-family: 'Unbounded', sans-serif;
   font-size: 1.5rem;
   font-weight: bolder;
   color: white;
+  margin: 0;
 `;
 
 export const ImageDevHeader = styled.img`
@@ -55,4 +51,3 @@ export const ButtonsHeader = styled(ToggleButtonGroup)`
   display: flex;
   align-items: center;
 `;
-
