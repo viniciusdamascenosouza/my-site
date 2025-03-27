@@ -16,7 +16,7 @@ const Projects = () => {
             <ImgProject file="../../assets/projects/acerteONumero.png" />
             <Carousel.Caption>
               <h3>Acerte o número</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <p>Jogo divertido de acertar o número, com comandos de voz para maior imersão.</p>
             </Carousel.Caption>
           </a>
         </Carousel.Item>

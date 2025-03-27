@@ -5,7 +5,12 @@ export const ImgDefault = styled.img`
   height: 380px;
   object-fit: contain;
 
-  filter: blur(0.5px);
-  transition: filter 0.3s;
-  opacity: 0.7;
+  filter: blur(1px);
+  transform: filter 5s;
+  opacity: 0.5;
+
+  &:hover {
+    filter: blur(0.5px);
+    opacity: 1;
+  }
 `;
