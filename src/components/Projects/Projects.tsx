@@ -30,7 +30,7 @@ const Projects = () => {
             <ImgProject file="../../assets/projects/aluGames.png" />
             <Carousel.Caption>
               <h3>AluGames</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Sistema de locação de jogos de tabuleiro, permitindo que os usuários explorem novas experiências sem precisar comprar..</p>
             </Carousel.Caption>
           </a>
         </Carousel.Item>
