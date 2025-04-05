@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const LargerTexts = styled.div`
     padding: 1rem 2rem;
-    margin: 10rem 0;
+    margin: 5em 0;
 
     font-size: 1.5rem;
     text-align: center;
